@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Book</title>
+  </head>
+
+  <body style="text-align: center">
+    <h2>Family Book</h2>
+    <p>Wait Until The Images are Loaded</p>
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg"
+      id="image"
+      height="300px"
+    />
+    <h1 id="text"></h1>
+    <button onclick="Update()">Next</button>
+    <script>
+      var urls = [
+        "https://i.pinimg.com/originals/d5/6c/d2/d56cd25436d0d3f56ad2f143750f7455.png",
+        "https://us.123rf.com/450wm/dualororua/dualororua1707/dualororua170700458/83258460-vector-illustration-of-big-brother-doing-piggyback-ride-younger-brother.jpg?ver=6",
+        "https://www.clipartmax.com/png/middle/33-331469_father-clipart-father-clip-art.png",
+        "https://www.kindpng.com/picc/m/120-1203344_cartoon-mother-clipart-hd-png-download.png"
+      ];
+      var text = ["Ranbir Singh", "Rocky Signh", "Alia Signh", "Diljet Signh"];
+      var i = 0;
+      function Update() {
+        
+
+
+        document.getElementById("image").src = urls[i];
+        document.getElementById("text").innerHTML = text[i];
+
+
+        i++;
+      }
+    </script>
+  </body>
+</html>
